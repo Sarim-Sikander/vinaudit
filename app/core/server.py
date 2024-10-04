@@ -42,7 +42,7 @@ def make_middleware() -> List[Middleware]:
 
 def create_app() -> FastAPI:
     app_ = FastAPI(
-        title="CarValue Trial Porject",
+        title="CarValue Trial Project",
         description="Search Interface for CarValue",
         version="1.0.0",
         docs_url=None if config.ENVIRONMENT == "production" else "/docs",

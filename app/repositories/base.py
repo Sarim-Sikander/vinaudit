@@ -1,5 +1,5 @@
 from functools import reduce
-from typing import Any, Generic, Type, TypeVar
+from typing import Any, Generic, Type, TypeVar, List, Set
 
 from sqlalchemy import Select, func
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -35,7 +35,7 @@ class BaseRepository(Generic[ModelType]):
 
         return query
 
-    async def _all(self, query: Select) -> list[ModelType]:
+    async def _all(self, query: Select) -> List[ModelType]:
         """
         Returns all results from the query.
 
@@ -123,7 +123,7 @@ class BaseRepository(Generic[ModelType]):
 
         return query
 
-    def _add_join_to_query(self, query: Select, join_: set[str]) -> Select:
+    def _add_join_to_query(self, query: Select, join_: Set[str]) -> Select:
         """
         Returns the query with the given join.
 

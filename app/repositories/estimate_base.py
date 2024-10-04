@@ -1,3 +1,5 @@
+from typing import List
+
 from app.models.estimate import Vehicle
 from app.repositories.base import BaseRepository
 
@@ -5,7 +7,7 @@ from app.repositories.base import BaseRepository
 class EstimateRepository(BaseRepository[Vehicle]):
     async def get_estimate(
         self, year: int, make: str, model: str, listing_mileage: int
-    ) -> list[Vehicle]:
+    ) -> List[Vehicle]:
         query = await self._query()
         if listing_mileage != 0:
             query = query.filter(

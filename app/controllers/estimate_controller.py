@@ -1,3 +1,5 @@
+from typing import List
+
 from app.controllers.base import BaseController
 from app.core.exceptions.base import NotFoundException
 from app.integration.lr_model import VehiclePriceEstimator
@@ -17,7 +19,7 @@ class EstimateController(BaseController[Vehicle]):
 
     async def get_estimate(self, request) -> EstimateResponse:
 
-        vehicles: list[Vehicle] = await self.estimate_repository.get_estimate(
+        vehicles: List[Vehicle] = await self.estimate_repository.get_estimate(
             make=request.make,
             year=request.year,
             model=request.model,
@@ -41,7 +43,7 @@ class EstimateController(BaseController[Vehicle]):
 
         average_price = round(adjusted_price, -2)
 
-        samples: list[VehicleSample] = [
+        samples: List[VehicleSample] = [
             VehicleSample(
                 year=vehicle.year,
                 make=vehicle.make,

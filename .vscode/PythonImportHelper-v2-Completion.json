@@ -40,7 +40,23 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -81,6 +97,30 @@
     },
     {
         "label": "TypeVar",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Set",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -1069,7 +1109,7 @@
         "kind": 6,
         "importPath": "app.controllers.base",
         "description": "app.controllers.base",
-        "peekOfCode": "class BaseController(Generic[ModelType]):\n    \"\"\"Base class for data controllers.\"\"\"\n    def __init__(self, model: Type[ModelType], repository: BaseRepository) -> None:\n        self.model_class: type[ModelType] = model\n        self.repository: BaseRepository[Any] = repository",
+        "peekOfCode": "class BaseController(Generic[ModelType]):\n    \"\"\"Base class for data controllers.\"\"\"\n    def __init__(self, model: Type[ModelType], repository: BaseRepository) -> None:\n        self.model_class: Type[ModelType] = model\n        self.repository: BaseRepository[Any] = repository",
         "detail": "app.controllers.base",
         "documentation": {}
     },
@@ -1078,7 +1118,7 @@
         "kind": 5,
         "importPath": "app.controllers.base",
         "description": "app.controllers.base",
-        "peekOfCode": "ModelType = TypeVar(\"ModelType\", bound=Base)\nclass BaseController(Generic[ModelType]):\n    \"\"\"Base class for data controllers.\"\"\"\n    def __init__(self, model: Type[ModelType], repository: BaseRepository) -> None:\n        self.model_class: type[ModelType] = model\n        self.repository: BaseRepository[Any] = repository",
+        "peekOfCode": "ModelType = TypeVar(\"ModelType\", bound=Base)\nclass BaseController(Generic[ModelType]):\n    \"\"\"Base class for data controllers.\"\"\"\n    def __init__(self, model: Type[ModelType], repository: BaseRepository) -> None:\n        self.model_class: Type[ModelType] = model\n        self.repository: BaseRepository[Any] = repository",
         "detail": "app.controllers.base",
         "documentation": {}
     },
@@ -1087,7 +1127,7 @@
         "kind": 6,
         "importPath": "app.controllers.estimate_controller",
         "description": "app.controllers.estimate_controller",
-        "peekOfCode": "class EstimateController(BaseController[Vehicle]):\n    def __init__(self, estimate_repository: EstimateRepository) -> None:\n        super().__init__(model=Vehicle, repository=estimate_repository)\n        self.estimate_repository: EstimateRepository = estimate_repository\n        self.estimator = VehiclePriceEstimator(\n            model_path=\"app/linear_regression_model.pkl\"\n        )\n        self.estimator.load_model()\n    async def get_estimate(self, request) -> EstimateResponse:\n        vehicles: list[Vehicle] = await self.estimate_repository.get_estimate(",
+        "peekOfCode": "class EstimateController(BaseController[Vehicle]):\n    def __init__(self, estimate_repository: EstimateRepository) -> None:\n        super().__init__(model=Vehicle, repository=estimate_repository)\n        self.estimate_repository: EstimateRepository = estimate_repository\n        self.estimator = VehiclePriceEstimator(\n            model_path=\"app/linear_regression_model.pkl\"\n        )\n        self.estimator.load_model()\n    async def get_estimate(self, request) -> EstimateResponse:\n        vehicles: List[Vehicle] = await self.estimate_repository.get_estimate(",
         "detail": "app.controllers.estimate_controller",
         "documentation": {}
     },
@@ -1177,7 +1217,7 @@
         "kind": 6,
         "importPath": "app.core.exceptions.base",
         "description": "app.core.exceptions.base",
-        "peekOfCode": "class NotFoundException(APIException):\n    def __init__(self, custom_msg: str = None, ex: Exception = None):\n        default_msg = HTTPStatus.NOT_FOUND.description\n        detail_msg = f\"{custom_msg}\" if custom_msg else default_msg\n        super().__init__(\n            status_code=HTTPStatus.NOT_FOUND,\n            msg=HTTPStatus.NOT_FOUND.description,\n            detail=detail_msg,\n            code=f\"{HTTPStatus.NOT_FOUND}{'1'.zfill(4)}\",\n            ex=ex,",
+        "peekOfCode": "class NotFoundException(APIException):\n    def __init__(self, custom_msg: str = None, ex: Exception = None):\n        default_msg = HTTPStatus.NOT_FOUND.phrase\n        detail_msg = f\"{custom_msg}\" if custom_msg else default_msg\n        super().__init__(\n            status_code=HTTPStatus.NOT_FOUND,\n            msg=HTTPStatus.NOT_FOUND.phrase,\n            detail=detail_msg,\n            code=f\"{HTTPStatus.NOT_FOUND.value}{'1'.zfill(4)}\",\n            ex=ex,",
         "detail": "app.core.exceptions.base",
         "documentation": {}
     },
@@ -1204,7 +1244,7 @@
         "kind": 6,
         "importPath": "app.core.config",
         "description": "app.core.config",
-        "peekOfCode": "class BaseConfig(BaseSettings):\n    class Config:\n        case_sensitive = True\nclass Config(BaseConfig):\n    HOST: str = \"0.0.0.0\"\n    PORT: int = 8000\n    ENVIRONMENT: str\n    DATABASE_URL: str = \"mysql+mysqlconnector://root:1234@localhost:3306/carvalue\"\n    class Config:\n        env_file = \"./.env\"",
+        "peekOfCode": "class BaseConfig(BaseSettings):\n    class Config:\n        case_sensitive = True\nclass Config(BaseConfig):\n    HOST: str = \"0.0.0.0\"\n    PORT: int = 8000\n    ENVIRONMENT: Optional[str]\n    DATABASE_URL: str = \"mysql+mysqlconnector://root:1234@localhost:3306/carvalue\"\n    class Config:\n        env_file = \"./.env\"",
         "detail": "app.core.config",
         "documentation": {}
     },
@@ -1213,7 +1253,7 @@
         "kind": 6,
         "importPath": "app.core.config",
         "description": "app.core.config",
-        "peekOfCode": "class Config(BaseConfig):\n    HOST: str = \"0.0.0.0\"\n    PORT: int = 8000\n    ENVIRONMENT: str\n    DATABASE_URL: str = \"mysql+mysqlconnector://root:1234@localhost:3306/carvalue\"\n    class Config:\n        env_file = \"./.env\"\nconfig: Config = Config()",
+        "peekOfCode": "class Config(BaseConfig):\n    HOST: str = \"0.0.0.0\"\n    PORT: int = 8000\n    ENVIRONMENT: Optional[str]\n    DATABASE_URL: str = \"mysql+mysqlconnector://root:1234@localhost:3306/carvalue\"\n    class Config:\n        env_file = \"./.env\"\nconfig: Config = Config()",
         "detail": "app.core.config",
         "documentation": {}
     },
@@ -1249,7 +1289,7 @@
         "kind": 2,
         "importPath": "app.core.server",
         "description": "app.core.server",
-        "peekOfCode": "def create_app() -> FastAPI:\n    app_ = FastAPI(\n        title=\"CarValue Trial Porject\",\n        description=\"Search Interface for CarValue\",\n        version=\"1.0.0\",\n        docs_url=None if config.ENVIRONMENT == \"production\" else \"/docs\",\n        redoc_url=None if config.ENVIRONMENT == \"production\" else \"/redoc\",\n    )\n    @app_.on_event(\"startup\")\n    async def startup_populate_data():",
+        "peekOfCode": "def create_app() -> FastAPI:\n    app_ = FastAPI(\n        title=\"CarValue Trial Project\",\n        description=\"Search Interface for CarValue\",\n        version=\"1.0.0\",\n        docs_url=None if config.ENVIRONMENT == \"production\" else \"/docs\",\n        redoc_url=None if config.ENVIRONMENT == \"production\" else \"/redoc\",\n    )\n    @app_.on_event(\"startup\")\n    async def startup_populate_data():",
         "detail": "app.core.server",
         "documentation": {}
     },
@@ -1312,7 +1352,7 @@
         "kind": 6,
         "importPath": "app.repositories.estimate_base",
         "description": "app.repositories.estimate_base",
-        "peekOfCode": "class EstimateRepository(BaseRepository[Vehicle]):\n    async def get_estimate(\n        self, year: int, make: str, model: str, listing_mileage: int\n    ) -> list[Vehicle]:\n        query = await self._query()\n        if listing_mileage != 0:\n            query = query.filter(\n                Vehicle.year == year,\n                Vehicle.make == make,\n                Vehicle.model == model,",
+        "peekOfCode": "class EstimateRepository(BaseRepository[Vehicle]):\n    async def get_estimate(\n        self, year: int, make: str, model: str, listing_mileage: int\n    ) -> List[Vehicle]:\n        query = await self._query()\n        if listing_mileage != 0:\n            query = query.filter(\n                Vehicle.year == year,\n                Vehicle.make == make,\n                Vehicle.model == model,",
         "detail": "app.repositories.estimate_base",
         "documentation": {}
     },
