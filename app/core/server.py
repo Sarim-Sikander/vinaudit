@@ -54,17 +54,24 @@ def create_app() -> FastAPI:
         async for session in get_session():
             result = await session.execute(select(Vehicle).limit(1))
             vehicle_exists = result.scalars().first()
+            data_file_path = "data/NEWTEST-inventory-listing-2022-08-17.txt"
+            chunksize = 10000
 
             if vehicle_exists is None:
-                data_file_path = "data/NEWTEST-inventory-listing-2022-08-17.txt"
-                df = pd.read_csv(data_file_path, delimiter="|", on_bad_lines="skip")
-                df_filtered = df.replace({np.nan: None})
-                vehicles_data = df_filtered.to_dict(orient="records")
+                # data_file_path = "data/NEWTEST-inventory-listing-2022-08-17.txt"
+                for chunk in pd.read_csv(
+                    data_file_path,
+                    delimiter="|",
+                    on_bad_lines="skip",
+                    chunksize=chunksize,
+                ):
+                    df_filtered = chunk.replace({pd.NA: None})
+                    vehicles_data = df_filtered.to_dict(orient="records")
 
-                await session.execute(insert(Vehicle), vehicles_data)
-                await session.commit()
+                    await session.execute(insert(Vehicle), vehicles_data)
+                    await session.commit()
 
-                app_logger.info("Database populated with initial data.")
+                    app_logger.info("Database populated with initial data.")
             else:
                 app_logger.info("Database already contains data.")
 
