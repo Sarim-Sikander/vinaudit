@@ -42,7 +42,7 @@
         input[type="submit"] {
             width: 100%;
             padding: 10px;
-            background: #007bff;
+            background: #000000;
             color: white;
             border: none;
             border-radius: 5px;
@@ -51,7 +51,7 @@
         }
 
         input[type="submit"]:hover {
-            background: #0056b3;
+            background: #000000;
         }
 
         table {
@@ -70,7 +70,7 @@
         }
 
         th {
-            background-color: #007bff;
+            background-color: #000000;
             color: white;
         }
 
@@ -108,14 +108,14 @@
         {% if average_price is not none %}
             <h2>Estimated Average Price: ${{ average_price }}</h2>
 
-            <h3>Sample Listings</h3>
+            <h3><b>Sample Listings</b></h3>
             <table>
                 <tr>
                     <th>Year</th>
                     <th>Make</th>
                     <th>Model</th>
                     <th>Price</th>
-                    <th>Mileage</th>
+                    <th>Mileage (Km)</th>
                     <th>Location</th>
                 </tr>
                 {% for vehicle in samples %}
@@ -123,7 +123,13 @@
                     <td>{{ vehicle.year }}</td>
                     <td>{{ vehicle.make }}</td>
                     <td>{{ vehicle.model }}</td>
-                    <td>${{ vehicle.listing_price }}</td>
+                    <td>
+                        {% if vehicle.listing_price %}
+                            ${{ vehicle.listing_price }}
+                        {% else %}
+                            
+                        {% endif %}
+                    </td>
                     <td>{{ vehicle.listing_mileage }}</td>
                     <td>{{ vehicle.dealer_city }}</td>
                 </tr>

@@ -1,5 +1,6 @@
 from app.controllers.base import BaseController
 from app.core.exceptions.base import NotFoundException
+from app.integration.lr_model import VehiclePriceEstimator
 from app.models.estimate import Vehicle
 from app.repositories import EstimateRepository
 from app.schemas.responses.estimate import EstimateResponse, VehicleSample
@@ -9,6 +10,10 @@ class EstimateController(BaseController[Vehicle]):
     def __init__(self, estimate_repository: EstimateRepository) -> None:
         super().__init__(model=Vehicle, repository=estimate_repository)
         self.estimate_repository: EstimateRepository = estimate_repository
+        self.estimator = VehiclePriceEstimator(
+            model_path="app/linear_regression_model.pkl"
+        )
+        self.estimator.load_model()
 
     async def get_estimate(self, request) -> EstimateResponse:
 
@@ -30,7 +35,9 @@ class EstimateController(BaseController[Vehicle]):
             if vehicle.listing_price is not None
         ) / len(vehicles)
 
-        adjusted_price = self.calculate_adjusted_price(base_price, request.mileage)
+        adjusted_price = self.estimator.calculate_adjusted_price(
+            base_price=base_price, mileage=request.mileage, year=request.year
+        )
 
         average_price = round(adjusted_price, -2)
 
@@ -47,23 +54,3 @@ class EstimateController(BaseController[Vehicle]):
         ]
 
         return EstimateResponse(average_price=average_price, samples=samples)
-
-    def calculate_adjusted_price(self, base_price: float, mileage: int) -> float:
-        """
-        Calculate the adjusted price based on the provided mileage.
-
-        Uses a piecewise function to account for depreciation rates in different mileage brackets.
-        """
-        if mileage is None:
-            return base_price
-
-        if mileage <= 30000:
-            depreciation_rate = 0.000001
-        elif mileage <= 100000:
-            depreciation_rate = 0.000003
-        else:
-            depreciation_rate = 0.000005
-
-        adjustment_factor = 1 - (depreciation_rate * mileage)
-        adjusted_price = base_price * max(adjustment_factor, 0)
-        return adjusted_price
