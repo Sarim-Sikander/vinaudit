@@ -1030,7 +1030,7 @@
         "kind": 6,
         "importPath": "app.controllers.estimate_controller",
         "description": "app.controllers.estimate_controller",
-        "peekOfCode": "class EstimateController(BaseController[Vehicle]):\n    def __init__(self, estimate_repository: EstimateRepository) -> None:\n        super().__init__(model=Vehicle, repository=estimate_repository)\n        self.estimate_repository: EstimateRepository = estimate_repository\n    async def get_estimate(self, request) -> EstimateResponse:\n        vehicles: list[Vehicle] = await self.estimate_repository.get_estimate(\n            make=request.make, year=request.year, model=request.model\n        )\n        if not vehicles:\n            raise NotFoundException(",
+        "peekOfCode": "class EstimateController(BaseController[Vehicle]):\n    def __init__(self, estimate_repository: EstimateRepository) -> None:\n        super().__init__(model=Vehicle, repository=estimate_repository)\n        self.estimate_repository: EstimateRepository = estimate_repository\n    async def get_estimate(self, request) -> EstimateResponse:\n        vehicles: list[Vehicle] = await self.estimate_repository.get_estimate(\n            make=request.make,\n            year=request.year,\n            model=request.model,\n            listing_mileage=request.mileage,",
         "detail": "app.controllers.estimate_controller",
         "documentation": {}
     },
@@ -1246,7 +1246,7 @@
         "kind": 6,
         "importPath": "app.repositories.estimate_base",
         "description": "app.repositories.estimate_base",
-        "peekOfCode": "class EstimateRepository(BaseRepository[Vehicle]):\n    async def get_estimate(self, year: int, make: str, model: str) -> list[Vehicle]:\n        query = await self._query()\n        query = query.filter(\n            Vehicle.year == year, Vehicle.make == make, Vehicle.model == model\n        )\n        return await self._all(query)",
+        "peekOfCode": "class EstimateRepository(BaseRepository[Vehicle]):\n    async def get_estimate(\n        self, year: int, make: str, model: str, listing_mileage: int\n    ) -> list[Vehicle]:\n        query = await self._query()\n        if listing_mileage != 0:\n            query = query.filter(\n                Vehicle.year == year,\n                Vehicle.make == make,\n                Vehicle.model == model,",
         "detail": "app.repositories.estimate_base",
         "documentation": {}
     },

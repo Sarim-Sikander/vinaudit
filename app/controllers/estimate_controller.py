@@ -13,7 +13,10 @@ class EstimateController(BaseController[Vehicle]):
     async def get_estimate(self, request) -> EstimateResponse:
 
         vehicles: list[Vehicle] = await self.estimate_repository.get_estimate(
-            make=request.make, year=request.year, model=request.model
+            make=request.make,
+            year=request.year,
+            model=request.model,
+            listing_mileage=request.mileage,
         )
 
         if not vehicles:
