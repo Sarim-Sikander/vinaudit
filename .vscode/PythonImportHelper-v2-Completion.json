@@ -1,0 +1,1361 @@
+[
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Generic",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Type",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypeVar",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Generic",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Type",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypeVar",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Form",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTMLResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "Jinja2Templates",
+        "importPath": "fastapi.templating",
+        "description": "fastapi.templating",
+        "isExtraImport": true,
+        "detail": "fastapi.templating",
+        "documentation": {}
+    },
+    {
+        "label": "EstimateController",
+        "importPath": "app.controllers",
+        "description": "app.controllers",
+        "isExtraImport": true,
+        "detail": "app.controllers",
+        "documentation": {}
+    },
+    {
+        "label": "EstimateController",
+        "importPath": "app.controllers",
+        "description": "app.controllers",
+        "isExtraImport": true,
+        "detail": "app.controllers",
+        "documentation": {}
+    },
+    {
+        "label": "Factory",
+        "importPath": "app.core.factory",
+        "description": "app.core.factory",
+        "isExtraImport": true,
+        "detail": "app.core.factory",
+        "documentation": {}
+    },
+    {
+        "label": "EstimateRequest",
+        "importPath": "app.schemas.requests.estimate",
+        "description": "app.schemas.requests.estimate",
+        "isExtraImport": true,
+        "detail": "app.schemas.requests.estimate",
+        "documentation": {}
+    },
+    {
+        "label": "EstimateResponse",
+        "importPath": "app.schemas.responses.estimate",
+        "description": "app.schemas.responses.estimate",
+        "isExtraImport": true,
+        "detail": "app.schemas.responses.estimate",
+        "documentation": {}
+    },
+    {
+        "label": "EstimateResponse",
+        "importPath": "app.schemas.responses.estimate",
+        "description": "app.schemas.responses.estimate",
+        "isExtraImport": true,
+        "detail": "app.schemas.responses.estimate",
+        "documentation": {}
+    },
+    {
+        "label": "VehicleSample",
+        "importPath": "app.schemas.responses.estimate",
+        "description": "app.schemas.responses.estimate",
+        "isExtraImport": true,
+        "detail": "app.schemas.responses.estimate",
+        "documentation": {}
+    },
+    {
+        "label": "estimate_settings",
+        "importPath": "app.api.endpoints",
+        "description": "app.api.endpoints",
+        "isExtraImport": true,
+        "detail": "app.api.endpoints",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "isExtraImport": true,
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "get_session",
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "isExtraImport": true,
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "reset_session_context",
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "isExtraImport": true,
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "isExtraImport": true,
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "set_session_context",
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "isExtraImport": true,
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "get_session",
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "isExtraImport": true,
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "isExtraImport": true,
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "isExtraImport": true,
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "isExtraImport": true,
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "NotFoundException",
+        "importPath": "app.core.exceptions",
+        "description": "app.core.exceptions",
+        "isExtraImport": true,
+        "detail": "app.core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "BaseRepository",
+        "importPath": "app.repositories.base",
+        "description": "app.repositories.base",
+        "isExtraImport": true,
+        "detail": "app.repositories.base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseRepository",
+        "importPath": "app.repositories.base",
+        "description": "app.repositories.base",
+        "isExtraImport": true,
+        "detail": "app.repositories.base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseController",
+        "importPath": "app.controllers.base",
+        "description": "app.controllers.base",
+        "isExtraImport": true,
+        "detail": "app.controllers.base",
+        "documentation": {}
+    },
+    {
+        "label": "NotFoundException",
+        "importPath": "app.core.exceptions.base",
+        "description": "app.core.exceptions.base",
+        "isExtraImport": true,
+        "detail": "app.core.exceptions.base",
+        "documentation": {}
+    },
+    {
+        "label": "Vehicle",
+        "importPath": "app.models.estimate",
+        "description": "app.models.estimate",
+        "isExtraImport": true,
+        "detail": "app.models.estimate",
+        "documentation": {}
+    },
+    {
+        "label": "Vehicle",
+        "importPath": "app.models.estimate",
+        "description": "app.models.estimate",
+        "isExtraImport": true,
+        "detail": "app.models.estimate",
+        "documentation": {}
+    },
+    {
+        "label": "Vehicle",
+        "importPath": "app.models.estimate",
+        "description": "app.models.estimate",
+        "isExtraImport": true,
+        "detail": "app.models.estimate",
+        "documentation": {}
+    },
+    {
+        "label": "EstimateRepository",
+        "importPath": "app.repositories",
+        "description": "app.repositories",
+        "isExtraImport": true,
+        "detail": "app.repositories",
+        "documentation": {}
+    },
+    {
+        "label": "EstimateRepository",
+        "importPath": "app.repositories",
+        "description": "app.repositories",
+        "isExtraImport": true,
+        "detail": "app.repositories",
+        "documentation": {}
+    },
+    {
+        "label": "sqlalchemy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "insert",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Index",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "TIMESTAMP",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "engine_from_config",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "pool",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "database_exists",
+        "importPath": "sqlalchemy_utils.functions",
+        "description": "sqlalchemy_utils.functions",
+        "isExtraImport": true,
+        "detail": "sqlalchemy_utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "create_database",
+        "importPath": "sqlalchemy_utils.functions",
+        "description": "sqlalchemy_utils.functions",
+        "isExtraImport": true,
+        "detail": "sqlalchemy_utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "ContextVar",
+        "importPath": "contextvars",
+        "description": "contextvars",
+        "isExtraImport": true,
+        "detail": "contextvars",
+        "documentation": {}
+    },
+    {
+        "label": "Token",
+        "importPath": "contextvars",
+        "description": "contextvars",
+        "isExtraImport": true,
+        "detail": "contextvars",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "async_scoped_session",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Delete",
+        "importPath": "sqlalchemy.sql.expression",
+        "description": "sqlalchemy.sql.expression",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql.expression",
+        "documentation": {}
+    },
+    {
+        "label": "Insert",
+        "importPath": "sqlalchemy.sql.expression",
+        "description": "sqlalchemy.sql.expression",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql.expression",
+        "documentation": {}
+    },
+    {
+        "label": "Update",
+        "importPath": "sqlalchemy.sql.expression",
+        "description": "sqlalchemy.sql.expression",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql.expression",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy.sql.expression",
+        "description": "sqlalchemy.sql.expression",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql.expression",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPStatus",
+        "importPath": "http",
+        "description": "http",
+        "isExtraImport": true,
+        "detail": "http",
+        "documentation": {}
+    },
+    {
+        "label": "partial",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "reduce",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "Vehicle",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "ASGIApp",
+        "importPath": "starlette.types",
+        "description": "starlette.types",
+        "isExtraImport": true,
+        "detail": "starlette.types",
+        "documentation": {}
+    },
+    {
+        "label": "Receive",
+        "importPath": "starlette.types",
+        "description": "starlette.types",
+        "isExtraImport": true,
+        "detail": "starlette.types",
+        "documentation": {}
+    },
+    {
+        "label": "Scope",
+        "importPath": "starlette.types",
+        "description": "starlette.types",
+        "isExtraImport": true,
+        "detail": "starlette.types",
+        "documentation": {}
+    },
+    {
+        "label": "Send",
+        "importPath": "starlette.types",
+        "description": "starlette.types",
+        "isExtraImport": true,
+        "detail": "starlette.types",
+        "documentation": {}
+    },
+    {
+        "label": "BaseSettings",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "Middleware",
+        "importPath": "fastapi.middleware",
+        "description": "fastapi.middleware",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy.future",
+        "description": "sqlalchemy.future",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.future",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "app.api.api",
+        "description": "app.api.api",
+        "isExtraImport": true,
+        "detail": "app.api.api",
+        "documentation": {}
+    },
+    {
+        "label": "validate_database",
+        "importPath": "app.core.database.create_db",
+        "description": "app.core.database.create_db",
+        "isExtraImport": true,
+        "detail": "app.core.database.create_db",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemyMiddleware",
+        "importPath": "app.core.middlewares.sqlalchemy",
+        "description": "app.core.middlewares.sqlalchemy",
+        "isExtraImport": true,
+        "detail": "app.core.middlewares.sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "app_logger",
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "isExtraImport": true,
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "TimeAuditMixin",
+        "importPath": "app.models.mixins",
+        "description": "app.models.mixins",
+        "isExtraImport": true,
+        "detail": "app.models.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy.sql",
+        "description": "sqlalchemy.sql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "mysql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
+        "documentation": {}
+    },
+    {
+        "label": "fileConfig",
+        "importPath": "logging.config",
+        "description": "logging.config",
+        "isExtraImport": true,
+        "detail": "logging.config",
+        "documentation": {}
+    },
+    {
+        "label": "uvicorn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.endpoints.estimate_settings",
+        "description": "app.api.endpoints.estimate_settings",
+        "peekOfCode": "router = APIRouter()\ntemplates = Jinja2Templates(directory=\"app/templates\")\n@router.get(\"/\", response_class=HTMLResponse)\nasync def show_estimate_form(request: Request):\n    return templates.TemplateResponse(\n        \"estimate_form_with_result.html\", {\"request\": request}\n    )\n@router.post(\"/\")\nasync def estimate_value(\n    request: Request,",
+        "detail": "app.api.endpoints.estimate_settings",
+        "documentation": {}
+    },
+    {
+        "label": "templates",
+        "kind": 5,
+        "importPath": "app.api.endpoints.estimate_settings",
+        "description": "app.api.endpoints.estimate_settings",
+        "peekOfCode": "templates = Jinja2Templates(directory=\"app/templates\")\n@router.get(\"/\", response_class=HTMLResponse)\nasync def show_estimate_form(request: Request):\n    return templates.TemplateResponse(\n        \"estimate_form_with_result.html\", {\"request\": request}\n    )\n@router.post(\"/\")\nasync def estimate_value(\n    request: Request,\n    year: int = Form(...),",
+        "detail": "app.api.endpoints.estimate_settings",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.api",
+        "description": "app.api.api",
+        "peekOfCode": "router = APIRouter()\nrouter.include_router(\n    router=estimate_settings.router, prefix=\"/estimate\", tags=[\"estimate_car_value\"]\n)",
+        "detail": "app.api.api",
+        "documentation": {}
+    },
+    {
+        "label": "BaseController",
+        "kind": 6,
+        "importPath": "app.controllers.base",
+        "description": "app.controllers.base",
+        "peekOfCode": "class BaseController(Generic[ModelType]):\n    \"\"\"Base class for data controllers.\"\"\"\n    def __init__(self, model: Type[ModelType], repository: BaseRepository) -> None:\n        self.model_class: type[ModelType] = model\n        self.repository: BaseRepository[Any] = repository\n    async def get_by_id(self, id_: int, join_: set[str] | None = None) -> ModelType:\n        \"\"\"\n        Returns the model instance matching the id.\n        :param id_: The id to match.\n        :param join_: The joins to make.",
+        "detail": "app.controllers.base",
+        "documentation": {}
+    },
+    {
+        "label": "ModelType",
+        "kind": 5,
+        "importPath": "app.controllers.base",
+        "description": "app.controllers.base",
+        "peekOfCode": "ModelType = TypeVar(\"ModelType\", bound=Base)\nclass BaseController(Generic[ModelType]):\n    \"\"\"Base class for data controllers.\"\"\"\n    def __init__(self, model: Type[ModelType], repository: BaseRepository) -> None:\n        self.model_class: type[ModelType] = model\n        self.repository: BaseRepository[Any] = repository\n    async def get_by_id(self, id_: int, join_: set[str] | None = None) -> ModelType:\n        \"\"\"\n        Returns the model instance matching the id.\n        :param id_: The id to match.",
+        "detail": "app.controllers.base",
+        "documentation": {}
+    },
+    {
+        "label": "EstimateController",
+        "kind": 6,
+        "importPath": "app.controllers.estimate_controller",
+        "description": "app.controllers.estimate_controller",
+        "peekOfCode": "class EstimateController(BaseController[Vehicle]):\n    def __init__(self, estimate_repository: EstimateRepository) -> None:\n        super().__init__(model=Vehicle, repository=estimate_repository)\n        self.estimate_repository: EstimateRepository = estimate_repository\n    async def get_estimate(self, request) -> EstimateResponse:\n        vehicles: list[Vehicle] = await self.estimate_repository.get_estimate(\n            make=request.make, year=request.year, model=request.model\n        )\n        if not vehicles:\n            raise NotFoundException(",
+        "detail": "app.controllers.estimate_controller",
+        "documentation": {}
+    },
+    {
+        "label": "validate_database",
+        "kind": 2,
+        "importPath": "app.core.database.create_db",
+        "description": "app.core.database.create_db",
+        "peekOfCode": "def validate_database():\n    engine = create_engine(config.DATABASE_URL)\n    if database_exists(engine.url):\n        print(\"Database already exists\")\n    else:\n        create_database(engine.url)\n        print(\"New database created\")",
+        "detail": "app.core.database.create_db",
+        "documentation": {}
+    },
+    {
+        "label": "RoutingSession",
+        "kind": 6,
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "peekOfCode": "class RoutingSession(Session):\n    def get_bind(self, mapper=None, clause=None, **kwargs):\n        if self._flushing or isinstance(clause, (Update, Delete, Insert)):\n            return engine\n        return engine\nasync_session_factory = sessionmaker(\n    class_=AsyncSession,\n    sync_session_class=RoutingSession,\n    expire_on_commit=False,\n)",
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "get_session_context",
+        "kind": 2,
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "peekOfCode": "def get_session_context() -> str:\n    return session_context.get()\ndef set_session_context(session_id: str) -> Token:\n    return session_context.set(session_id)\ndef reset_session_context(context: Token) -> None:\n    session_context.reset(context)\nclass RoutingSession(Session):\n    def get_bind(self, mapper=None, clause=None, **kwargs):\n        if self._flushing or isinstance(clause, (Update, Delete, Insert)):\n            return engine",
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "set_session_context",
+        "kind": 2,
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "peekOfCode": "def set_session_context(session_id: str) -> Token:\n    return session_context.set(session_id)\ndef reset_session_context(context: Token) -> None:\n    session_context.reset(context)\nclass RoutingSession(Session):\n    def get_bind(self, mapper=None, clause=None, **kwargs):\n        if self._flushing or isinstance(clause, (Update, Delete, Insert)):\n            return engine\n        return engine\nasync_session_factory = sessionmaker(",
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "reset_session_context",
+        "kind": 2,
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "peekOfCode": "def reset_session_context(context: Token) -> None:\n    session_context.reset(context)\nclass RoutingSession(Session):\n    def get_bind(self, mapper=None, clause=None, **kwargs):\n        if self._flushing or isinstance(clause, (Update, Delete, Insert)):\n            return engine\n        return engine\nasync_session_factory = sessionmaker(\n    class_=AsyncSession,\n    sync_session_class=RoutingSession,",
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "peekOfCode": "Base = declarative_base()\nsession_context: ContextVar[str] = ContextVar(\"session_context\")\nengine = create_engine(config.DATABASE_URL, pool_recycle=3600)\ndef get_session_context() -> str:\n    return session_context.get()\ndef set_session_context(session_id: str) -> Token:\n    return session_context.set(session_id)\ndef reset_session_context(context: Token) -> None:\n    session_context.reset(context)\nclass RoutingSession(Session):",
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "peekOfCode": "engine = create_engine(config.DATABASE_URL, pool_recycle=3600)\ndef get_session_context() -> str:\n    return session_context.get()\ndef set_session_context(session_id: str) -> Token:\n    return session_context.set(session_id)\ndef reset_session_context(context: Token) -> None:\n    session_context.reset(context)\nclass RoutingSession(Session):\n    def get_bind(self, mapper=None, clause=None, **kwargs):\n        if self._flushing or isinstance(clause, (Update, Delete, Insert)):",
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "async_session_factory",
+        "kind": 5,
+        "importPath": "app.core.database.session",
+        "description": "app.core.database.session",
+        "peekOfCode": "async_session_factory = sessionmaker(\n    class_=AsyncSession,\n    sync_session_class=RoutingSession,\n    expire_on_commit=False,\n)\nsession: Union[AsyncSession, async_scoped_session] = async_scoped_session(\n    session_factory=async_session_factory,\n    scopefunc=get_session_context,\n)\nasync def get_session():",
+        "detail": "app.core.database.session",
+        "documentation": {}
+    },
+    {
+        "label": "APIException",
+        "kind": 6,
+        "importPath": "app.core.exceptions.base",
+        "description": "app.core.exceptions.base",
+        "peekOfCode": "class APIException(Exception):\n    status_code: int\n    code: str\n    msg: str\n    detail: str\n    ex: Exception\n    def __init__(\n        self,\n        *,\n        status_code: int = HTTPStatus.INTERNAL_SERVER_ERROR,",
+        "detail": "app.core.exceptions.base",
+        "documentation": {}
+    },
+    {
+        "label": "NotFoundException",
+        "kind": 6,
+        "importPath": "app.core.exceptions.base",
+        "description": "app.core.exceptions.base",
+        "peekOfCode": "class NotFoundException(APIException):\n    def __init__(self, custom_msg: str = None, ex: Exception = None):\n        default_msg = HTTPStatus.NOT_FOUND.description\n        detail_msg = f\"{custom_msg}\" if custom_msg else default_msg\n        super().__init__(\n            status_code=HTTPStatus.NOT_FOUND,\n            msg=HTTPStatus.NOT_FOUND.description,\n            detail=detail_msg,\n            code=f\"{HTTPStatus.NOT_FOUND}{'1'.zfill(4)}\",\n            ex=ex,",
+        "detail": "app.core.exceptions.base",
+        "documentation": {}
+    },
+    {
+        "label": "Factory",
+        "kind": 6,
+        "importPath": "app.core.factory.factory",
+        "description": "app.core.factory.factory",
+        "peekOfCode": "class Factory:\n    estimate_repository = partial(EstimateRepository, Vehicle)\n    def get_estimate_controller(\n        self, db_session=Depends(get_session)\n    ) -> EstimateController:\n        return EstimateController(\n            estimate_repository=self.estimate_repository(db_session=db_session),\n        )",
+        "detail": "app.core.factory.factory",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemyMiddleware",
+        "kind": 6,
+        "importPath": "app.core.middlewares.sqlalchemy",
+        "description": "app.core.middlewares.sqlalchemy",
+        "peekOfCode": "class SQLAlchemyMiddleware:\n    def __init__(self, app: ASGIApp) -> None:\n        self.app = app\n    async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:\n        session_id = str(uuid4())\n        context = set_session_context(session_id=session_id)\n        try:\n            await self.app(scope, receive, send)\n        except Exception as exception:\n            raise exception",
+        "detail": "app.core.middlewares.sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "BaseConfig",
+        "kind": 6,
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "peekOfCode": "class BaseConfig(BaseSettings):\n    class Config:\n        case_sensitive = True\nclass Config(BaseConfig):\n    HOST: str = \"0.0.0.0\"\n    PORT: int = 8000\n    ENVIRONMENT: str\n    DATABASE_URL: str = \"mysql+mysqlconnector://root:1234@localhost:3306/carvalue\"\n    class Config:\n        env_file = \"./.env\"",
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "kind": 6,
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "peekOfCode": "class Config(BaseConfig):\n    HOST: str = \"0.0.0.0\"\n    PORT: int = 8000\n    ENVIRONMENT: str\n    DATABASE_URL: str = \"mysql+mysqlconnector://root:1234@localhost:3306/carvalue\"\n    class Config:\n        env_file = \"./.env\"\nconfig: Config = Config()",
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "init_db",
+        "kind": 2,
+        "importPath": "app.core.server",
+        "description": "app.core.server",
+        "peekOfCode": "def init_db():\n    validate_database()\ndef init_routers(app_: FastAPI) -> None:\n    app_.include_router(router)\ndef make_middleware() -> List[Middleware]:\n    middleware = [\n        Middleware(\n            CORSMiddleware,\n            allow_origins=[\"*\"],\n            allow_credentials=True,",
+        "detail": "app.core.server",
+        "documentation": {}
+    },
+    {
+        "label": "init_routers",
+        "kind": 2,
+        "importPath": "app.core.server",
+        "description": "app.core.server",
+        "peekOfCode": "def init_routers(app_: FastAPI) -> None:\n    app_.include_router(router)\ndef make_middleware() -> List[Middleware]:\n    middleware = [\n        Middleware(\n            CORSMiddleware,\n            allow_origins=[\"*\"],\n            allow_credentials=True,\n            allow_methods=[\"*\"],\n            allow_headers=[\"*\"],",
+        "detail": "app.core.server",
+        "documentation": {}
+    },
+    {
+        "label": "make_middleware",
+        "kind": 2,
+        "importPath": "app.core.server",
+        "description": "app.core.server",
+        "peekOfCode": "def make_middleware() -> List[Middleware]:\n    middleware = [\n        Middleware(\n            CORSMiddleware,\n            allow_origins=[\"*\"],\n            allow_credentials=True,\n            allow_methods=[\"*\"],\n            allow_headers=[\"*\"],\n        ),\n        Middleware(SQLAlchemyMiddleware),",
+        "detail": "app.core.server",
+        "documentation": {}
+    },
+    {
+        "label": "create_app",
+        "kind": 2,
+        "importPath": "app.core.server",
+        "description": "app.core.server",
+        "peekOfCode": "def create_app() -> FastAPI:\n    app_ = FastAPI(\n        title=\"CarValue Trial Porject\",\n        description=\"Search Interface for CarValue\",\n        version=\"1.0.0\",\n        docs_url=None if config.ENVIRONMENT == \"production\" else \"/docs\",\n        redoc_url=None if config.ENVIRONMENT == \"production\" else \"/redoc\",\n    )\n    @app_.on_event(\"startup\")\n    async def startup_populate_data():",
+        "detail": "app.core.server",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.core.server",
+        "description": "app.core.server",
+        "peekOfCode": "app = create_app()",
+        "detail": "app.core.server",
+        "documentation": {}
+    },
+    {
+        "label": "Vehicle",
+        "kind": 6,
+        "importPath": "app.models.estimate",
+        "description": "app.models.estimate",
+        "peekOfCode": "class Vehicle(Base, TimeAuditMixin):\n    __tablename__ = \"vehicles\"\n    id = Column(Integer, primary_key=True)\n    year = Column(Integer, nullable=True)\n    make = Column(String(250), nullable=True)\n    model = Column(String(250), nullable=True)\n    trim = Column(String(500), nullable=True)\n    dealer_name = Column(String(500), nullable=True)\n    dealer_street = Column(String(500), nullable=True)\n    dealer_city = Column(String(500), nullable=True)",
+        "detail": "app.models.estimate",
+        "documentation": {}
+    },
+    {
+        "label": "TimeAuditMixin",
+        "kind": 6,
+        "importPath": "app.models.mixins",
+        "description": "app.models.mixins",
+        "peekOfCode": "class TimeAuditMixin:\n    created_at = Column(\n        TIMESTAMP(timezone=True), nullable=False, server_default=func.now()\n    )",
+        "detail": "app.models.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "BaseRepository",
+        "kind": 6,
+        "importPath": "app.repositories.base",
+        "description": "app.repositories.base",
+        "peekOfCode": "class BaseRepository(Generic[ModelType]):\n    \"\"\"Base class for data repositories.\"\"\"\n    def __init__(self, model: Type[ModelType], db_session: AsyncSession):\n        self.session = db_session\n        self.model_class: Type[ModelType] = model\n    async def _query(\n        self,\n        join_: set[str] | None = None,\n        order_: dict | None = None,\n    ) -> Select:",
+        "detail": "app.repositories.base",
+        "documentation": {}
+    },
+    {
+        "label": "ModelType",
+        "kind": 5,
+        "importPath": "app.repositories.base",
+        "description": "app.repositories.base",
+        "peekOfCode": "ModelType = TypeVar(\"ModelType\", bound=Base)\nclass BaseRepository(Generic[ModelType]):\n    \"\"\"Base class for data repositories.\"\"\"\n    def __init__(self, model: Type[ModelType], db_session: AsyncSession):\n        self.session = db_session\n        self.model_class: Type[ModelType] = model\n    async def _query(\n        self,\n        join_: set[str] | None = None,\n        order_: dict | None = None,",
+        "detail": "app.repositories.base",
+        "documentation": {}
+    },
+    {
+        "label": "EstimateRepository",
+        "kind": 6,
+        "importPath": "app.repositories.estimate_base",
+        "description": "app.repositories.estimate_base",
+        "peekOfCode": "class EstimateRepository(BaseRepository[Vehicle]):\n    async def get_estimate(self, year: int, make: str, model: str) -> list[Vehicle]:\n        query = await self._query()\n        query = query.filter(\n            Vehicle.year == year, Vehicle.make == make, Vehicle.model == model\n        )\n        return await self._all(query)",
+        "detail": "app.repositories.estimate_base",
+        "documentation": {}
+    },
+    {
+        "label": "EstimateRequest",
+        "kind": 6,
+        "importPath": "app.schemas.requests.estimate",
+        "description": "app.schemas.requests.estimate",
+        "peekOfCode": "class EstimateRequest(BaseModel):\n    year: int = Field(..., description=\"The year of the vehicle\", examples=[2015])\n    make: str = Field(..., description=\"The make of the vehicle\", examples=[\"Toyota\"])\n    model: str = Field(..., description=\"The model of the vehicle\", examples=[\"Camry\"])\n    mileage: Optional[int] = Field(\n        None, description=\"The mileage of the vehicle\", examples=[150000]\n    )",
+        "detail": "app.schemas.requests.estimate",
+        "documentation": {}
+    },
+    {
+        "label": "VehicleSample",
+        "kind": 6,
+        "importPath": "app.schemas.responses.estimate",
+        "description": "app.schemas.responses.estimate",
+        "peekOfCode": "class VehicleSample(BaseModel):\n    year: int = Field(..., description=\"The year of the vehicle\")\n    make: str = Field(..., description=\"The make of the vehicle\")\n    model: str = Field(..., description=\"The model of the vehicle\")\n    listing_price: Optional[int] = Field(None, description=\"The price of the vehicle\")\n    listing_mileage: Optional[int] = Field(\n        None, description=\"The mileage of the vehicle\"\n    )\n    dealer_city: str = Field(..., description=\"The location of the vehicle\")\nclass EstimateResponse(BaseModel):",
+        "detail": "app.schemas.responses.estimate",
+        "documentation": {}
+    },
+    {
+        "label": "EstimateResponse",
+        "kind": 6,
+        "importPath": "app.schemas.responses.estimate",
+        "description": "app.schemas.responses.estimate",
+        "peekOfCode": "class EstimateResponse(BaseModel):\n    average_price: float = Field(\n        ..., description=\"The estimated average price of the vehicle\"\n    )\n    samples: List[VehicleSample] = Field(\n        ..., description=\"List of sample vehicles used to calculate the average price\"\n    )",
+        "detail": "app.schemas.responses.estimate",
+        "documentation": {}
+    },
+    {
+        "label": "D",
+        "kind": 6,
+        "importPath": "app.utils.date_utils",
+        "description": "app.utils.date_utils",
+        "peekOfCode": "class D:\n    def __init__(self, *args):\n        self.utc_now = datetime.utcnow()\n        self.timedelta = 0\n    @classmethod\n    def datetime(cls, diff: int = 0) -> datetime:\n        return (\n            cls().utc_now + timedelta(hours=diff)\n            if diff > 0\n            else cls().utc_now + timedelta(hours=diff)",
+        "detail": "app.utils.date_utils",
+        "documentation": {}
+    },
+    {
+        "label": "AppLogger",
+        "kind": 6,
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "peekOfCode": "class AppLogger:\n    def __init__(self, name: str, level: int = logging.INFO):\n        # Create a custom logger\n        self.logger = logging.getLogger(name)\n        self.logger.setLevel(level)\n        # Check if logger already has handlers (to avoid duplicate handlers)\n        if not self.logger.hasHandlers():\n            # Create a console handler\n            console_handler = logging.StreamHandler()\n            console_handler.setLevel(level)",
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "app_logger",
+        "kind": 5,
+        "importPath": "app.utils.logger",
+        "description": "app.utils.logger",
+        "peekOfCode": "app_logger = AppLogger(name=\"carvalue_logger\").get_logger()",
+        "detail": "app.utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.c0769f2fc3eb_new_table",
+        "description": "migrations.versions.c0769f2fc3eb_new_table",
+        "peekOfCode": "def upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.alter_column('vehicles', 'make',\n               existing_type=mysql.VARCHAR(length=400),\n               type_=sa.String(length=250),\n               existing_nullable=True)\n    op.alter_column('vehicles', 'model',\n               existing_type=mysql.VARCHAR(length=400),\n               type_=sa.String(length=250),\n               existing_nullable=True)",
+        "detail": "migrations.versions.c0769f2fc3eb_new_table",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.c0769f2fc3eb_new_table",
+        "description": "migrations.versions.c0769f2fc3eb_new_table",
+        "peekOfCode": "def downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_index('ix_vehicle_price_mileage', table_name='vehicles')\n    op.drop_index('ix_vehicle_make_model', table_name='vehicles')\n    op.alter_column('vehicles', 'model',\n               existing_type=sa.String(length=250),\n               type_=mysql.VARCHAR(length=400),\n               existing_nullable=True)\n    op.alter_column('vehicles', 'make',\n               existing_type=sa.String(length=250),",
+        "detail": "migrations.versions.c0769f2fc3eb_new_table",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_offline",
+        "kind": 2,
+        "importPath": "migrations.env",
+        "description": "migrations.env",
+        "peekOfCode": "def run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation\n    we don't even need a DBAPI to be available.\n    Calls to context.execute() here emit the given string to the\n    script output.\n    \"\"\"\n    url = config.get_main_option(\"sqlalchemy.url\")",
+        "detail": "migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_online",
+        "kind": 2,
+        "importPath": "migrations.env",
+        "description": "migrations.env",
+        "peekOfCode": "def run_migrations_online() -> None:\n    \"\"\"Run migrations in 'online' mode.\n    In this scenario we need to create an Engine\n    and associate a connection with the context.\n    \"\"\"\n    connectable = engine_from_config(\n        config.get_section(config.config_ini_section, {}),\n        prefix=\"sqlalchemy.\",\n        poolclass=pool.NullPool,\n    )",
+        "detail": "migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "migrations.env",
+        "description": "migrations.env",
+        "peekOfCode": "config = context.config\nprint(cn.DATABASE_URL)\nconfig.set_main_option(\"sqlalchemy.url\", cn.DATABASE_URL)\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel",
+        "detail": "migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "target_metadata",
+        "kind": 5,
+        "importPath": "migrations.env",
+        "description": "migrations.env",
+        "peekOfCode": "target_metadata = [Base.metadata]\n# other values from the config, defined by the needs of env.py,\n# can be acquired:\n# my_important_option = config.get_main_option(\"my_important_option\")\n# ... etc.\ndef run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation",
+        "detail": "migrations.env",
+        "documentation": {}
+    }
+]

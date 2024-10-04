@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Value Estimation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Car Value Estimation</h1>
+        <form action="/estimate" method="post">
+            <label for="year">Year</label>
+            <input type="number" id="year" name="year" required value="{{ year if year else '' }}">
+
+            <label for="make">Make</label>
+            <input type="text" id="make" name="make" required value="{{ make if make else '' }}">
+
+            <label for="model">Model</label>
+            <input type="text" id="model" name="model" required value="{{ model if model else '' }}">
+
+            <label for="mileage">Mileage (optional)</label>
+            <input type="number" id="mileage" name="mileage" value="{{ mileage if mileage else '' }}">
+
+            <input type="submit" value="Get Estimate">
+        </form>
+
+        {% if average_price is not none %}
+            <h2>Estimated Average Price: ${{ average_price }}</h2>
+
+            <h3>Sample Listings</h3>
+            <table>
+                <tr>
+                    <th>Year</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Price</th>
+                    <th>Mileage</th>
+                    <th>Location</th>
+                </tr>
+                {% for vehicle in samples %}
+                <tr>
+                    <td>{{ vehicle.year }}</td>
+                    <td>{{ vehicle.make }}</td>
+                    <td>{{ vehicle.model }}</td>
+                    <td>${{ vehicle.listing_price }}</td>
+                    <td>{{ vehicle.listing_mileage }}</td>
+                    <td>{{ vehicle.dealer_city }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+    </div>
+</body>
+</html>
