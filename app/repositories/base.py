@@ -19,8 +19,8 @@ class BaseRepository(Generic[ModelType]):
 
     async def _query(
         self,
-        join_: set[str] | None = None,
-        order_: dict | None = None,
+        join_=None,
+        order_=None,
     ) -> Select:
         """
         Returns a callable that can be used to query the model.
@@ -50,8 +50,8 @@ class BaseRepository(Generic[ModelType]):
         self,
         query: Select,
         sort_by: str,
-        order: str | None = "asc",
-        model: Type[ModelType] | None = None,
+        order="asc",
+        model=None,
         case_insensitive: bool = False,
     ) -> Select:
         """
@@ -89,7 +89,7 @@ class BaseRepository(Generic[ModelType]):
         """
         return query.where(getattr(self.model_class, field) == value)
 
-    async def _maybe_join(self, query: Select, join_: set[str] | None = None) -> Select:
+    async def _maybe_join(self, query: Select, join_=None) -> Select:
         """
         Returns the query with the given joins.
 
@@ -105,7 +105,7 @@ class BaseRepository(Generic[ModelType]):
 
         return reduce(self._add_join_to_query, join_, query)
 
-    async def _maybe_ordered(self, query: Select, order_: dict | None = None) -> Select:
+    async def _maybe_ordered(self, query: Select, order_=None) -> Select:
         """
         Returns the query ordered by the given column.
 

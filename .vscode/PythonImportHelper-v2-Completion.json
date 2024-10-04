@@ -336,14 +336,6 @@
         "documentation": {}
     },
     {
-        "label": "NotFoundException",
-        "importPath": "app.core.exceptions",
-        "description": "app.core.exceptions",
-        "isExtraImport": true,
-        "detail": "app.core.exceptions",
-        "documentation": {}
-    },
-    {
         "label": "BaseRepository",
         "importPath": "app.repositories.base",
         "description": "app.repositories.base",
@@ -1077,7 +1069,7 @@
         "kind": 6,
         "importPath": "app.controllers.base",
         "description": "app.controllers.base",
-        "peekOfCode": "class BaseController(Generic[ModelType]):\n    \"\"\"Base class for data controllers.\"\"\"\n    def __init__(self, model: Type[ModelType], repository: BaseRepository) -> None:\n        self.model_class: type[ModelType] = model\n        self.repository: BaseRepository[Any] = repository\n    async def get_by_id(self, id_: int, join_: set[str] | None = None) -> ModelType:\n        \"\"\"\n        Returns the model instance matching the id.\n        :param id_: The id to match.\n        :param join_: The joins to make.",
+        "peekOfCode": "class BaseController(Generic[ModelType]):\n    \"\"\"Base class for data controllers.\"\"\"\n    def __init__(self, model: Type[ModelType], repository: BaseRepository) -> None:\n        self.model_class: type[ModelType] = model\n        self.repository: BaseRepository[Any] = repository",
         "detail": "app.controllers.base",
         "documentation": {}
     },
@@ -1086,7 +1078,7 @@
         "kind": 5,
         "importPath": "app.controllers.base",
         "description": "app.controllers.base",
-        "peekOfCode": "ModelType = TypeVar(\"ModelType\", bound=Base)\nclass BaseController(Generic[ModelType]):\n    \"\"\"Base class for data controllers.\"\"\"\n    def __init__(self, model: Type[ModelType], repository: BaseRepository) -> None:\n        self.model_class: type[ModelType] = model\n        self.repository: BaseRepository[Any] = repository\n    async def get_by_id(self, id_: int, join_: set[str] | None = None) -> ModelType:\n        \"\"\"\n        Returns the model instance matching the id.\n        :param id_: The id to match.",
+        "peekOfCode": "ModelType = TypeVar(\"ModelType\", bound=Base)\nclass BaseController(Generic[ModelType]):\n    \"\"\"Base class for data controllers.\"\"\"\n    def __init__(self, model: Type[ModelType], repository: BaseRepository) -> None:\n        self.model_class: type[ModelType] = model\n        self.repository: BaseRepository[Any] = repository",
         "detail": "app.controllers.base",
         "documentation": {}
     },
@@ -1302,7 +1294,7 @@
         "kind": 6,
         "importPath": "app.repositories.base",
         "description": "app.repositories.base",
-        "peekOfCode": "class BaseRepository(Generic[ModelType]):\n    \"\"\"Base class for data repositories.\"\"\"\n    def __init__(self, model: Type[ModelType], db_session: AsyncSession):\n        self.session = db_session\n        self.model_class: Type[ModelType] = model\n    async def _query(\n        self,\n        join_: set[str] | None = None,\n        order_: dict | None = None,\n    ) -> Select:",
+        "peekOfCode": "class BaseRepository(Generic[ModelType]):\n    \"\"\"Base class for data repositories.\"\"\"\n    def __init__(self, model: Type[ModelType], db_session: AsyncSession):\n        self.session = db_session\n        self.model_class: Type[ModelType] = model\n    async def _query(\n        self,\n        join_=None,\n        order_=None,\n    ) -> Select:",
         "detail": "app.repositories.base",
         "documentation": {}
     },
@@ -1311,7 +1303,7 @@
         "kind": 5,
         "importPath": "app.repositories.base",
         "description": "app.repositories.base",
-        "peekOfCode": "ModelType = TypeVar(\"ModelType\", bound=Base)\nclass BaseRepository(Generic[ModelType]):\n    \"\"\"Base class for data repositories.\"\"\"\n    def __init__(self, model: Type[ModelType], db_session: AsyncSession):\n        self.session = db_session\n        self.model_class: Type[ModelType] = model\n    async def _query(\n        self,\n        join_: set[str] | None = None,\n        order_: dict | None = None,",
+        "peekOfCode": "ModelType = TypeVar(\"ModelType\", bound=Base)\nclass BaseRepository(Generic[ModelType]):\n    \"\"\"Base class for data repositories.\"\"\"\n    def __init__(self, model: Type[ModelType], db_session: AsyncSession):\n        self.session = db_session\n        self.model_class: Type[ModelType] = model\n    async def _query(\n        self,\n        join_=None,\n        order_=None,",
         "detail": "app.repositories.base",
         "documentation": {}
     },
@@ -1365,7 +1357,7 @@
         "kind": 6,
         "importPath": "app.utils.logger",
         "description": "app.utils.logger",
-        "peekOfCode": "class AppLogger:\n    def __init__(self, name: str, level: int = logging.INFO):\n        # Create a custom logger\n        self.logger = logging.getLogger(name)\n        self.logger.setLevel(level)\n        # Check if logger already has handlers (to avoid duplicate handlers)\n        if not self.logger.hasHandlers():\n            # Create a console handler\n            console_handler = logging.StreamHandler()\n            console_handler.setLevel(level)",
+        "peekOfCode": "class AppLogger:\n    def __init__(self, name: str, level: int = logging.INFO):\n        self.logger = logging.getLogger(name)\n        self.logger.setLevel(level)\n        if not self.logger.hasHandlers():\n            console_handler = logging.StreamHandler()\n            console_handler.setLevel(level)\n            formatter = logging.Formatter(\n                \"%(asctime)s - %(name)s - %(levelname)s - %(message)s\"\n            )",
         "detail": "app.utils.logger",
         "documentation": {}
     },
