@@ -65,7 +65,7 @@ def create_app() -> FastAPI:
                     on_bad_lines="skip",
                     chunksize=chunksize,
                 ):
-                    df_filtered = chunk.replace({pd.NA: None})
+                    df_filtered = chunk.replace({np.nan: None})
                     vehicles_data = df_filtered.to_dict(orient="records")
 
                     await session.execute(insert(Vehicle), vehicles_data)
