@@ -1143,7 +1143,7 @@
         "kind": 6,
         "importPath": "app.controllers.estimate_controller",
         "description": "app.controllers.estimate_controller",
-        "peekOfCode": "class EstimateController(BaseController[Vehicle]):\n    def __init__(self, estimate_repository: EstimateRepository) -> None:\n        super().__init__(model=Vehicle, repository=estimate_repository)\n        self.estimate_repository: EstimateRepository = estimate_repository\n        self.estimator = VehiclePriceEstimator(\n            model_path=\"app/linear_regression_model.pkl\"\n        )\n        self.estimator.load_model()\n    async def get_estimate(self, request) -> EstimateResponse:\n        vehicles: List[Vehicle] = await self.estimate_repository.get_estimate(",
+        "peekOfCode": "class EstimateController(BaseController[Vehicle]):\n    def __init__(self, estimate_repository: EstimateRepository) -> None:\n        super().__init__(model=Vehicle, repository=estimate_repository)\n        self.estimate_repository: EstimateRepository = estimate_repository\n        self.estimator = VehiclePriceEstimator(model_path=\"app/regression_model.pkl\")\n        self.estimator.load_model()\n    async def get_estimate(self, request) -> EstimateResponse:\n        vehicles: List[Vehicle] = await self.estimate_repository.get_estimate(\n            make=request.make,\n            year=request.year,",
         "detail": "app.controllers.estimate_controller",
         "documentation": {}
     },

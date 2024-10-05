@@ -73,14 +73,14 @@ class VehiclePriceEstimator:
         return predicted_price
 
 
-if __name__ == "__main__":
-    estimator = VehiclePriceEstimator()
+# if __name__ == "__main__":
+#     estimator = VehiclePriceEstimator()
 
-    estimator.train_model(
-        data_file_path="data/NEWTEST-inventory-listing-2022-08-17.txt"
-    )
-    estimator.load_model()
+#     estimator.train_model(
+#         data_file_path="data/NEWTEST-inventory-listing-2022-08-17.txt"
+#     )
+#     estimator.load_model()
 
-    mileage = 50000
-    year = 2018
-    predicted_price = estimator.predict_price(mileage, year)
+#     mileage = 50000
+#     year = 2018
+#     predicted_price = estimator.predict_price(mileage, year)
