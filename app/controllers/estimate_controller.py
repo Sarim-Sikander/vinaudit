@@ -12,7 +12,7 @@ class EstimateController(BaseController[Vehicle]):
     def __init__(self, estimate_repository: EstimateRepository) -> None:
         super().__init__(model=Vehicle, repository=estimate_repository)
         self.estimate_repository: EstimateRepository = estimate_repository
-        self.estimator = VehiclePriceEstimator(model_path="app/regression_model.pkl")
+        self.estimator = VehiclePriceEstimator(model_path="app/regression_model.json")
         self.estimator.load_model()
 
     async def get_estimate(self, request) -> EstimateResponse:
