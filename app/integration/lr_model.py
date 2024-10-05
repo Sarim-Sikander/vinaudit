@@ -4,11 +4,11 @@ from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 import pandas as pd
 import numpy as np
-import pickle
+import joblib
 
 
 class VehiclePriceEstimator:
-    def __init__(self, model_path="app/linear_regression_model.pkl"):
+    def __init__(self, model_path="app/regression_model.pkl"):
         self.model_path = model_path
         self.pipeline = None
 
@@ -42,13 +42,11 @@ class VehiclePriceEstimator:
     def save_model(self):
         if self.pipeline is None:
             raise ValueError("No model found. Train the model before saving.")
-        with open(self.model_path, "wb") as f:
-            pickle.dump(self.pipeline, f)
+        joblib.dump(self.pipeline, self.model_path)
 
     def load_model(self):
         try:
-            with open(self.model_path, "rb") as f:
-                self.pipeline = pickle.load(f)
+            self.pipeline = joblib.load(self.model_path)
         except FileNotFoundError:
             raise FileNotFoundError(
                 f"Model file not found at {self.model_path}. Train and save the model first."
@@ -75,14 +73,14 @@ class VehiclePriceEstimator:
         return predicted_price
 
 
-# if __name__ == "__main__":
-#     estimator = VehiclePriceEstimator()
+if __name__ == "__main__":
+    estimator = VehiclePriceEstimator()
 
-#     estimator.train_model(
-#         data_file_path="data/NEWTEST-inventory-listing-2022-08-17.txt"
-#     )
-#     estimator.load_model()
+    estimator.train_model(
+        data_file_path="data/NEWTEST-inventory-listing-2022-08-17.txt"
+    )
+    estimator.load_model()
 
-#     mileage = 50000
-#     year = 2018
-#     predicted_price = estimator.predict_price(mileage, year)
+    mileage = 50000
+    year = 2018
+    predicted_price = estimator.predict_price(mileage, year)

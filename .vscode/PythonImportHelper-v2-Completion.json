@@ -963,12 +963,12 @@
         "documentation": {}
     },
     {
-        "label": "pickle",
+        "label": "joblib",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "pickle",
-        "description": "pickle",
-        "detail": "pickle",
+        "importPath": "joblib",
+        "description": "joblib",
+        "detail": "joblib",
         "documentation": {}
     },
     {
@@ -1323,7 +1323,7 @@
         "kind": 6,
         "importPath": "app.integration.lr_model",
         "description": "app.integration.lr_model",
-        "peekOfCode": "class VehiclePriceEstimator:\n    def __init__(self, model_path=\"app/linear_regression_model.pkl\"):\n        self.model_path = model_path\n        self.pipeline = None\n    def train_model(self, data_file_path):\n        df = pd.read_csv(data_file_path, delimiter=\"|\", on_bad_lines=\"skip\")\n        df_filtered = df.dropna(\n            subset=[\"listing_mileage\", \"listing_price\", \"make\", \"model\", \"year\"]\n        )\n        X = df_filtered[[\"listing_mileage\", \"year\"]]",
+        "peekOfCode": "class VehiclePriceEstimator:\n    def __init__(self, model_path=\"app/regression_model.pkl\"):\n        self.model_path = model_path\n        self.pipeline = None\n    def train_model(self, data_file_path):\n        df = pd.read_csv(data_file_path, delimiter=\"|\", on_bad_lines=\"skip\")\n        df_filtered = df.dropna(\n            subset=[\"listing_mileage\", \"listing_price\", \"make\", \"model\", \"year\"]\n        )\n        X = df_filtered[[\"listing_mileage\", \"year\"]]",
         "detail": "app.integration.lr_model",
         "documentation": {}
     },

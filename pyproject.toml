@@ -20,6 +20,7 @@ python-multipart = "^0.0.12"
 alembic = "^1.13.3"
 pymysql = "^1.1.1"
 scikit-learn = "^1.5.2"
+joblib = "^1.4.2"
 
 
 [build-system]
