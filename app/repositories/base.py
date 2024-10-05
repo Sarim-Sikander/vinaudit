@@ -1,7 +1,7 @@
 from functools import reduce
 from typing import Any, Generic, Type, TypeVar, List, Set
 
-from sqlalchemy import Select, func
+from sqlalchemy import Select, func, insert
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.sql.expression import select
 
@@ -16,6 +16,14 @@ class BaseRepository(Generic[ModelType]):
     def __init__(self, model: Type[ModelType], db_session: AsyncSession):
         self.session = db_session
         self.model_class: Type[ModelType] = model
+
+    async def insert_many(self, records: List[dict]):
+        """
+        Insert multiple records into the database.
+
+        :param records: List of dictionaries, each representing a row to be inserted.
+        """
+        await self.session.execute(insert(self.model_class), records)
 
     async def _query(
         self,

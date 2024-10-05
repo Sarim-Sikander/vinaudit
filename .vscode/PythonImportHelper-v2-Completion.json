@@ -392,6 +392,14 @@
         "documentation": {}
     },
     {
+        "label": "BaseRepository",
+        "importPath": "app.repositories.base",
+        "description": "app.repositories.base",
+        "isExtraImport": true,
+        "detail": "app.repositories.base",
+        "documentation": {}
+    },
+    {
         "label": "BaseController",
         "importPath": "app.controllers.base",
         "description": "app.controllers.base",
@@ -554,6 +562,14 @@
     },
     {
         "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "insert",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -1334,7 +1350,7 @@
         "kind": 6,
         "importPath": "app.repositories.base",
         "description": "app.repositories.base",
-        "peekOfCode": "class BaseRepository(Generic[ModelType]):\n    \"\"\"Base class for data repositories.\"\"\"\n    def __init__(self, model: Type[ModelType], db_session: AsyncSession):\n        self.session = db_session\n        self.model_class: Type[ModelType] = model\n    async def _query(\n        self,\n        join_=None,\n        order_=None,\n    ) -> Select:",
+        "peekOfCode": "class BaseRepository(Generic[ModelType]):\n    \"\"\"Base class for data repositories.\"\"\"\n    def __init__(self, model: Type[ModelType], db_session: AsyncSession):\n        self.session = db_session\n        self.model_class: Type[ModelType] = model\n    async def insert_many(self, records: List[dict]):\n        \"\"\"\n        Insert multiple records into the database.\n        :param records: List of dictionaries, each representing a row to be inserted.\n        \"\"\"",
         "detail": "app.repositories.base",
         "documentation": {}
     },
@@ -1343,7 +1359,7 @@
         "kind": 5,
         "importPath": "app.repositories.base",
         "description": "app.repositories.base",
-        "peekOfCode": "ModelType = TypeVar(\"ModelType\", bound=Base)\nclass BaseRepository(Generic[ModelType]):\n    \"\"\"Base class for data repositories.\"\"\"\n    def __init__(self, model: Type[ModelType], db_session: AsyncSession):\n        self.session = db_session\n        self.model_class: Type[ModelType] = model\n    async def _query(\n        self,\n        join_=None,\n        order_=None,",
+        "peekOfCode": "ModelType = TypeVar(\"ModelType\", bound=Base)\nclass BaseRepository(Generic[ModelType]):\n    \"\"\"Base class for data repositories.\"\"\"\n    def __init__(self, model: Type[ModelType], db_session: AsyncSession):\n        self.session = db_session\n        self.model_class: Type[ModelType] = model\n    async def insert_many(self, records: List[dict]):\n        \"\"\"\n        Insert multiple records into the database.\n        :param records: List of dictionaries, each representing a row to be inserted.",
         "detail": "app.repositories.base",
         "documentation": {}
     },
