@@ -91,16 +91,16 @@
         <h1>Car Value Estimation</h1>
         <form action="/estimate" method="post">
             <label for="year">Year</label>
-            <input type="number" id="year" name="year" required value="{{ year if year else '' }}">
+            <input type="number" id="year" name="year" required value="{{ year or '' }}">
 
             <label for="make">Make</label>
-            <input type="text" id="make" name="make" required value="{{ make if make else '' }}">
+            <input type="text" id="make" name="make" required value="{{ make or '' }}">
 
             <label for="model">Model</label>
-            <input type="text" id="model" name="model" required value="{{ model if model else '' }}">
+            <input type="text" id="model" name="model" required value="{{ model or '' }}">
 
             <label for="mileage">Mileage (optional)</label>
-            <input type="number" id="mileage" name="mileage" value="{{ mileage if mileage else '' }}">
+            <input type="number" id="mileage" name="mileage" value="{{ mileage or '' }}">
 
             <input type="submit" value="Get Estimate">
         </form>
@@ -127,7 +127,7 @@
                         {% if vehicle.listing_price %}
                             ${{ vehicle.listing_price }}
                         {% else %}
-                            
+                            N/A
                         {% endif %}
                     </td>
                     <td>{{ vehicle.listing_mileage }}</td>
