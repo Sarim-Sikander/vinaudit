@@ -50,5 +50,9 @@ async def estimate_value(
             "request": request,
             "average_price": response.average_price,
             "samples": response.samples,
+            "year": year,
+            "make": make,
+            "model": model,
+            "mileage": mileage,
         },
     )
