@@ -1,4 +1,5 @@
 from typing import Optional
+from fastapi import HTTPException
 from fastapi import APIRouter, Depends, Request, Form
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
@@ -30,6 +31,12 @@ async def estimate_value(
         Factory().get_estimate_controller
     ),
 ):
+    if year > 2024 or year < 0:
+        raise HTTPException(status_code=400, detail="Year must be between 0 and 2024.")
+
+    if mileage is not None and mileage < 0:
+        raise HTTPException(status_code=400, detail="Mileage cannot be negative.")
+
     estimate_request = EstimateRequest(
         year=year, make=make, model=model, mileage=mileage
     )
