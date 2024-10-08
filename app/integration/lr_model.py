@@ -89,18 +89,18 @@ class VehiclePriceEstimator:
         predicted_price = self.predict_price(mileage, year, make, model)
         return predicted_price
 
-if __name__ == "__main__":
-    estimator = VehiclePriceEstimator()
+# if __name__ == "__main__":
+#     estimator = VehiclePriceEstimator()
 
-    estimator.train_model(
-        data_file_path="data/NEWTEST-inventory-listing-2022-08-17.txt"
-    )
+#     estimator.train_model(
+#         data_file_path="data/NEWTEST-inventory-listing-2022-08-17.txt"
+#     )
 
-    estimator.load_model()
+#     estimator.load_model()
 
-    mileage = 5000
-    year = 2010
-    make = "Honda"
-    model = "Civic"
-    predicted_price = estimator.predict_price(mileage, year, make, model)
-    print(f"Predicted price: {predicted_price}")
+#     mileage = 5000
+#     year = 2010
+#     make = "Honda"
+#     model = "Civic"
+#     predicted_price = estimator.predict_price(mileage, year, make, model)
+#     print(f"Predicted price: {predicted_price}")
