@@ -80,7 +80,7 @@ class VehiclePriceEstimator:
         model_encoded = self.label_encoder_model.transform([model])[0] if model in self.label_encoder_model.classes_ else 0
 
         input_data = np.array([[mileage, year, make_encoded, model_encoded]])
-        return self.model.predict(input_data)[0]
+        return self.model.predict(input_data)[0]/2
 
     def calculate_adjusted_price(self, base_price, mileage, year, make, model):
         if mileage is None:
