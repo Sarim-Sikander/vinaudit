@@ -38,9 +38,6 @@ class EstimateController(BaseController[Vehicle]):
         adjusted_price = self.estimator.calculate_adjusted_price(
             base_price=base_price,
             mileage=request.mileage,
-            year=request.year,
-            make=request.make,
-            model=request.model,
         )
 
         average_price = round(adjusted_price, -2)

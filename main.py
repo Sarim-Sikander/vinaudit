@@ -7,5 +7,5 @@ if __name__ == "__main__":
         host=config.HOST,
         port=config.PORT,
         reload=True if config.ENVIRONMENT != "production" else False,
-        workers=1,
+        workers=4,
     )
